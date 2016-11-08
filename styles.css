@@ -1,0 +1,144 @@
+body {
+	background: url(shattered.jpg);
+	color: #111;
+}
+
+.paused {
+	/*SERVES FUNCTION AS PAUSE CHECK */	
+}
+
+#loadBar {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;		
+}
+
+.loadContainer {
+	padding: 3px;
+	height: 300px;
+	width: 300px;	
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 50%;	
+}
+
+#timeMinDisp {
+	display: inline;		
+}
+
+#timeSecDisp {
+	display: inline;	
+}
+
+#timeSemiColon {
+	display: inline;	
+}
+
+.timeContainer {
+	position: relative;	
+	text-align: center;
+	top: 175px;
+}
+
+.clockFont {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+}
+
+#msgSpace {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	top: 150px;
+}
+
+.mont {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clearBtn {	
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#workMinDisp {
+	display: inline;
+}
+
+#breakMinDisp {
+	display: inline;
+}
+
+.center {
+	text-align: center;
+}
+
+#startContainer {
+	text-align: right;
+}
+
+#pauseContainer {
+	text-align: left;
+}
+
+.ignitionBtn {
+	border: 3px solid black;
+	background: transparent;
+	font-size: 25px;
+	padding: 15px 40px;
+}
+
+.timeSetRow {
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.timeSetSize {
+	font-size: 18px;
+}
+
+.pomoHeader {
+	padding-bottom: 15px;
+}
+
+#cycleRow {
+	padding-top: 25px;
+	padding-left: 15px;
+	padding-bottom: 25px;
+}
+
+/* Extra Small Styles */
+@media (max-width: 767px) {    
+  .col-xs-12 {
+  	padding-left: 0px;
+  	padding-right: 0px;
+  }
+
+  .col-xs-6 {
+  	padding-left: 0px;
+  	padding-right: 0px;
+  }
+
+  .loadContainer {
+  	margin-top: 20px;
+  }
+
+  #startContainer {
+		text-align: center;
+	}
+
+	#pauseContainer {
+		text-align: center;
+	}
+
+	.ignitionBtn {
+		padding: 0px 6px;
+		height: 70px;
+		width: 149px;
+	}
+}

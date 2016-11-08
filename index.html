@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pomodoro</title>
+	<meta name="description" content="Pomodoro Timer">
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Ensures proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Montserrat Font -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <!-- FontAwesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<!-- Custom CSS -->
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 hidden-xs">
+				<h1 class="mont text-center pomoHeader">Pomodoro Timer</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="loadContainer">
+					<div id="loadBar">
+						<div id="msgSpace">Please set a time.</div>
+						<div class="timeContainer">							
+							<div id="timeMinDisp" class="clockFont">--</div>
+							<div id="timeSemiColon" class="clockFont">:</div>
+							<div id="timeSecDisp" class="clockFont">--</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="row timeSetRow timeSetSize">			
+			<div class="col-xs-6 text-center">
+				<button id="decreaser" class="clearBtn">
+					<span class="glyphicon glyphicon-minus"></span>
+				</button>
+				<div id="workMinDisp" class="mont"></div>					
+				<button id="increaser" class="clearBtn">
+					<span class="glyphicon glyphicon-plus"></span>
+				</button>
+				<div class="mont">Session Length</div>				
+			</div>
+			<div class="col-xs-6 text-center">
+				<button id="breakDecreaser" class="clearBtn">
+					<span class="glyphicon glyphicon-minus"></span>
+				</button>
+				<div id="breakMinDisp" class="mont"></div>
+				<button id="breakIncreaser" class="clearBtn">
+					<span class="glyphicon glyphicon-plus"></span>
+				</button>
+				<div class="mont">Break Length</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="startContainer" class="col-xs-6">
+				<button id="start" class="mont ignitionBtn shrink">Start</button>
+			</div>
+			<div id="pauseContainer" class="col-xs-6">
+				<button id="pause" class="mont ignitionBtn shrink">Pause</button>
+			</div>
+		</div>
+		<div class="row" id="cycleRow">			
+			<div class="col-xs-12 mont" id="cycleSpace"></div>
+		</div>				
+	</div>	
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+</body>
+</html>
